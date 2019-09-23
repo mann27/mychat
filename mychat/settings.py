@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'mannchat.urls'
+ROOT_URLCONF = 'mychat.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mannchat.wsgi.application'
+WSGI_APPLICATION = 'mychat.wsgi.application'
 
 
 # Database
@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 
 
 # Channels
-ASGI_APPLICATION = 'mannchat.routing.application'
+ASGI_APPLICATION = 'mychat.routing.application'
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
